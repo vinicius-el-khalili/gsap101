@@ -17,7 +17,6 @@ const ReusableComponents = () => {
             context.revert()
         }
     })
-
     return (
         <>
         
@@ -26,14 +25,14 @@ const ReusableComponents = () => {
         ref={rootRef}
         style={{
             display:"flex",
-            gap:"1rem"
+            gap:"1rem",
         }}
         >
-
+        
             <Box selector="rotateRight" />
             <Box selector="moveRight" />
             <Box selector="rotateRight moveRight" />
-
+        
         </div>
 
         </>
