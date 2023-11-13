@@ -1,7 +1,7 @@
 "use client"
 
 import { gsap, Power3 } from "gsap"
-import { useEffect, useLayoutEffect, useRef } from "react"
+import { useEffect, useLayoutEffect, useRef, useState } from "react"
 import { FaReact } from "react-icons/fa"
 import { IconType } from "react-icons"
 
@@ -9,6 +9,7 @@ import { IconType } from "react-icons"
 const LogoItem = () => {
 
     const boxRef = useRef<HTMLDivElement|null>(null)
+    const [key,setKey] = useState<number>(0)
 
     useLayoutEffect(()=>{
         console.log(boxRef)
