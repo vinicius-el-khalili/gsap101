@@ -13,9 +13,9 @@ const Timelines = () => {
         const context = gsap.context(()=>{
             timelineRef.current = gsap.timeline()
             .to(".rotate",{rotate:"90"})
-            .to(".moveX",{x:100, rotate:-90})
+            .to(".moveX",{x:100, rotate:90})
             .to(".moveY",{y:-100})
-            .to(".moveX2",{x:200, rotate:-45})
+            .to(".moveX2",{x:200, rotate:0})
             .to(".moveY2",{y:-200, rotate:0})
         }, rootRef)
 
