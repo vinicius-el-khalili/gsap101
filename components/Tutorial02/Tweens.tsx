@@ -4,7 +4,7 @@ import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import us from "@/sass/utilityStyles/utilityStyles.module.scss"
 
-const CreatingAnAnimation = () => {
+const Tweens = () => {
 
     const rootRef = useRef<HTMLDivElement|null>(null)
 
@@ -65,4 +65,4 @@ const CreatingAnAnimation = () => {
     );
 }
  
-export default CreatingAnAnimation;
+export default Tweens;
