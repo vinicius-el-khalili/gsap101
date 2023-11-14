@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import styles from './page.module.css'
-import { gsap, Power3 } from "gsap"
 import Link from 'next/link'
 
 export default function Home() {
@@ -12,7 +10,7 @@ export default function Home() {
         padding:"1rem",
         borderRadius:"12px"
       }}
-      href={"/tutorial01"}><h1>Tutorial 01</h1></Link>
+      href={"/tutorial01"}><h1>Hello World</h1></Link>
     </main>
   )
 }
