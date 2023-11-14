@@ -15,7 +15,6 @@ const ReRenderable = ({children}:{
             display:"flex",
             flexDirection:"column",
             alignItems:"center",
-            overflow:"hidden"
         }}
         key={key}
         >

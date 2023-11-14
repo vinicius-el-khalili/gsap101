@@ -18,10 +18,10 @@ const CreatingAnAnimation = () => {
             {
                 width:0,
                 height:0,
-                fontSize:18,
+                fontSize:0,
                 borderRadius:0,
                 backgroundColor:"blue",
-                duration:1.5
+                duration:1.5,
             },
             {
                 width:150,
@@ -30,7 +30,10 @@ const CreatingAnAnimation = () => {
                 borderRadius:"100%",
                 backgroundColor:"red",
                 rotate: 720,
-                duration: 1.5
+                duration: 1.5,
+                repeat: -1,
+                repeatDelay:1,
+                yoyo: true,
             })
         },rootRef)
         return ()=>{
@@ -53,11 +56,11 @@ const CreatingAnAnimation = () => {
             <div className={`${us.box} boxFromTo`}/>
             <p>{`set {x:100}`}</p>
             <div className={`${us.box} boxSet`}/>
-
-            <h1>Let's go crazy</h1>
+            <h1>Let's go</h1>
             <div className="wtf">WTF DUDE</div>
+            <h1>crazy</h1>
+
         </div>
-        
         </>
     );
 }
