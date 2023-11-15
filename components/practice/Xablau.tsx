@@ -11,9 +11,31 @@ const Xablau = () => {
 
     const rootRef = useRef<HTMLDivElement|null>(null)
     useLayoutEffect(()=>{
+        gsap.context(()=>{
 
-        gsap.context(()=>{},rootRef)
+            gsap.fromTo(".rotate1",{
+                rotate: 90,
+                duration:1.5,
+                ease: "bounce"
+            },{
+                rotation:"+=45",
+                repeat:-1,
+                duration:.5,
+                yoyo: true                
+            })
 
+            gsap.fromTo(".rotate2",{
+                rotate: -90,
+                duration:1.5,
+                ease: "bounce"
+            },{
+                rotation:"+=45",
+                repeat:-1,
+                duration:1.5,
+                yoyo: true                
+            })
+
+        },rootRef)
     },[])
 
     return (
@@ -23,7 +45,8 @@ const Xablau = () => {
         <div
             ref={rootRef}
             style={{
-                backgroundColor:"#757575",
+
+                backgroundColor:"transparent",
                 border:"1px solid white",
                 height:"200px",
                 width:"200px",
@@ -31,9 +54,19 @@ const Xablau = () => {
 
             }}
         >
-            <Image src={img1} alt="" style={{objectFit:"contain",position:"absolute"}}/>
-            <Image src={img2} alt="" style={{objectFit:"contain",position:"absolute"}}/>
-            <Image src={img3} alt="" style={{objectFit:"contain",position:"absolute"}}/>
+            <div
+            className="rotate1"
+            style={{position:"absolute"}}
+            >
+                <Image src={img1} alt="" style={{objectFit:"contain"}}/>
+            </div>
+            
+            <div
+            className="rotate2"
+            style={{position:"absolute"}}
+            >
+                <Image src={img2} alt="" style={{objectFit:"contain"}}/>
+            </div>
         </div>
         
         </>

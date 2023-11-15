@@ -45,9 +45,11 @@ const FontSizer = () => {
         }}>
 
             <div ref={rootRef} style={{display:"flex"}}>
-                <div className="animate1 animate2"><LetterTest/></div>
-                <div className="animate1 animate2"><LetterTest2/></div>
-                <div className="animate1 animate2"><LetterTest/></div>
+                <div className="animate1"><LetterTest3/></div>
+                <div className="animate1"><LetterTest/></div>
+                <div className="animate1"><LetterTest2/></div>
+                <div className="animate1"><LetterTest3/></div>
+                <div className="animate1"><LetterTest/></div>
             </div>
 
         </div>
