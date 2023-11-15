@@ -24,6 +24,10 @@ const Xablau = () => {
             ref={rootRef}
             style={{
                 backgroundColor:"#757575",
+                border:"1px solid white",
+                height:"200px",
+                width:"200px",
+                borderRadius:"100%"
 
             }}
         >
