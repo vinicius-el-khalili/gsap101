@@ -22,7 +22,6 @@ export default function RootLayout({
         display:"flex",
         flexDirection:"column",
         alignItems:"center",
-        padding:"1rem"
       }}>{children}</body>
     </html>
   )

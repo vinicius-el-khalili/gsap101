@@ -1,0 +1,23 @@
+.Container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    h1 {
+        font-weight: lighter;
+    }
+    span {
+        font-weight: bolder;
+        background-image: linear-gradient(
+            132deg,
+            #f43ff4,#d8e614
+        );
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+}
