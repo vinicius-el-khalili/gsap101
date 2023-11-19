@@ -21,3 +21,18 @@
     }
 
 }
+
+.cursorText {
+    display: flex;
+    .cursorLetter {
+        background-color: red;
+        width:  16px;
+        height: 16px;
+        display: grid;
+        place-items: center;
+
+    &:nth-child(1){
+        background-color: #d8e614;
+    }
+    }
+}
