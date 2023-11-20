@@ -3,36 +3,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
     padding: 1rem;
+
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
     h1 {
         font-weight: lighter;
+        margin: 0;
+        padding: .5rem;
     }
-    span {
-        font-weight: bolder;
-        background-image: linear-gradient(
-            132deg,
-            #f43ff4,#d8e614
-        );
-        -webkit-background-clip: text;
-        color: transparent;
+    input {
+        background-color: black;
+        border: 1px solid lightblue;
+        padding: 1rem;
+        border-radius: 12px;
+        color: lightblue;
+        &:focus{
+            outline: none;
+            box-shadow: 0 0 15px white;
+        }
     }
-
 }
 
 .cursorText {
     display: flex;
+    border: "1px solid red";
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,50%);
     .cursorLetter {
-        background-color: red;
-        width:  16px;
-        height: 16px;
+        color: transparent;
+        font-size: 36px;
+        width:  36px;
+        height: 36px;
         display: grid;
         place-items: center;
-
-    &:nth-child(1){
-        background-color: #d8e614;
-    }
     }
 }
