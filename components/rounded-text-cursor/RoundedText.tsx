@@ -25,7 +25,7 @@ const RoundedText = () => {
                     rotate:0
                 },{
                     display:"flex",
-                    rotate:360,
+                    rotate:-360,
                     repeat:-1,
                     ease:"none",
                     duration:10
