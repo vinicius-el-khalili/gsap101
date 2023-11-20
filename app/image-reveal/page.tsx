@@ -1,10 +1,10 @@
-import style from "@/sass/pages/imageRevealPage.module.scss"
-const ImageReveal = () => {
+import ImageReveal from "@/components/image-reveal/ImageReveal";
+const ImageRevealPage = () => {
     return (
-        <div className={style.ImageRevealPage}>
-            image reveal!
-        </div>
+        <>
+        <ImageReveal/>
+        </>
     );
 }
  
-export default ImageReveal;
+export default ImageRevealPage;

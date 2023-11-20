@@ -21,3 +21,15 @@
     }
 
 }
+
+.imageContainer {
+
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: content-box;
+
+}
