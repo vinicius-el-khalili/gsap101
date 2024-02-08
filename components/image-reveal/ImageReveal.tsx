@@ -13,9 +13,9 @@ const ImageReveal = () => {
     useLayoutEffect(()=>{
         const context = gsap.context(()=>{
 
-            gsap.fromTo(".imageContainer",{
+            gsap.fromTo(".image",{
                 opacity:0,
-                scale:1.6
+                scale:2
             },{
                 opacity:1,
                 scale:1
@@ -45,6 +45,7 @@ const ImageReveal = () => {
             <div className={`imageContainer ${style.imageContainer}`}>
 
                 <Image
+                className="image"
                 src={asset}
                 alt=""
                 fill
