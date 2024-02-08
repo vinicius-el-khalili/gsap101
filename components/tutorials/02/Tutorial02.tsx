@@ -21,11 +21,11 @@ const Tutorial02 = () => {
             return
         }
         shrinkAll()
-        gsap.to(classname,{width:200,height:200,ease:Power3.easeOut,fontSize:"2rem",duration:.5})
+        gsap.to(classname,{width:200,height:200,ease:Power3.easeOut,duration:.5})
         setExpand(classname)
     }
     const shrink = (classname:string) => {
-        gsap.to(classname,{width:"5rem",height:"5rem",ease:Power3.easeOut,fontSize:"0rem",duration:.5})
+        gsap.to(classname,{width:"5rem",height:"5rem",ease:Power3.easeOut,duration:.5})
         setExpand(false)
     }
     const shrinkAll = () => {
@@ -54,25 +54,19 @@ const Tutorial02 = () => {
                 ref={circleYellow} 
                 className={`cy ${style.circle} ${style.yellow}`}
                 onClick={e=>handleExpand(e,".cy")}
-                >
-                    Aaa
-                </div>
+                />
 
                 <div 
                 ref={circleRed} 
                 className={`cr ${style.circle} ${style.red}`}
                 onClick={e=>handleExpand(e,".cr")}
-                >
-                    Bbb
-                </div>
+                />
 
                 <div 
                 ref={circleBlue} 
                 className={`cb ${style.circle} ${style.blue}`}
                 onClick={e=>handleExpand(e,".cb")}
-                >
-                    Ccc
-                </div>
+                />
 
             </div>
         </div>
