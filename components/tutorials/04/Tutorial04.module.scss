@@ -35,7 +35,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 2rem;
+        width: 3rem;
         height: 16rem;
     }
     .slide {
@@ -44,9 +44,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         .imgContainer {
+            position: relative;
             height: 100%;
             width: 100%;
             border: 1px solid gray;
+            overflow: hidden;
+            .img {
+                opacity: 0;
+                position: absolute;
+            }
         }
         .textContainer {
             display: flex;
@@ -54,18 +60,26 @@
             justify-content: center;
             border: 1px solid gray;
             padding: 1rem;
-            .text {
-                font-weight: bolder;
-                font-size: 1.2rem;
+            .subtextContainer {
+                position: absolute;
+                margin-right: 5rem;
+                .text {
+                    font-weight: bolder;
+                    font-size: 1.2rem;
+                    opacity: 0;
+                }
+                .name {
+                    padding-top: 1rem;
+                    padding-bottom: 6px;
+                    opacity: 0;
+                }
+                .description {
+                    font-size: .8rem;
+                    font-weight: lighter;
+                    opacity: 0;
+                }
             }
-            .name {
-                padding-top: 1rem;
-                padding-bottom: 6px;
-            }
-            .description {
-                font-size: .8rem;
-                font-weight: lighter;
-            }
+            
         }
     }
 }
