@@ -36,6 +36,7 @@
         .textHeader {
             font-size: 1.6rem;
             font-weight: bolder;
+            
         }
         .paragraph {
             font-size: .9rem;
@@ -59,6 +60,7 @@
         grid-template-columns: 1.3fr 1fr;
         padding: 1rem;
         gap: .5rem;
+        overflow: hidden;
         .img {
             position: relative;
             width: 100%;
@@ -74,3 +76,48 @@
         }
     }
 }
+
+// responsiveness
+
+@media screen and (max-width:720px) {
+    .HeroContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: .7fr 1fr;
+        .textsContainer {
+            grid-row: 2;
+        }
+        .imagesContainer {
+            grid-row: 1;
+            .img {
+                height: 100%;
+            }
+        }
+    }
+    
+}
+
+//gsap initial states
+
+.textsContainer {
+    opacity: 0;
+    .textHeader {
+        p {
+            padding-top: 30px;
+            overflow: hidden;
+            height: 2rem;
+        }
+    }
+    .paragraph {
+        opacity: 0;
+    }
+    .explore {
+        opacity: 0;
+    }
+}
+
+.imagesContainer {
+    .img {
+        opacity: 0;
+    }       
+}
+
