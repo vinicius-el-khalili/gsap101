@@ -23,7 +23,7 @@ const Tutorial07 = () => {
             gsap.fromTo(".img",{transform:"scale(1.1)"},{transform:"scale(1)",delay:1.8})
             gsap.to(".titleBlocker",{opacity:1,delay:2.5, duration:.1})
             gsap.to(".title > p",{opacity:1,delay:2.6, duration:0})
-            gsap.to(".titleBlocker",{x:"13rem",width:0,delay:2.6,duration:.4,ease:Power3.easeInOut})
+            gsap.to(".titleBlocker",{x:"18vw",width:0,delay:2.6,duration:.4,ease:Power3.easeInOut})
 
        },[RootRef]) 
        return ()=>{context.revert()}
