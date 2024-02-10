@@ -24,6 +24,15 @@ const Tutorial07 = () => {
             gsap.to(".titleBlocker",{opacity:1,delay:2.5, duration:.1})
             gsap.to(".title > p",{opacity:1,delay:2.6, duration:0})
             gsap.to(".titleBlocker",{x:"18vw",width:0,delay:2.6,duration:.4,ease:Power3.easeInOut})
+            gsap.fromTo(".number",{y:-20},{y:0,opacity:1,delay:3})
+            gsap.fromTo(".button",{y:20},{y:0,opacity:1,delay:3})
+            gsap.to(".leftContentBlocker",{height:"20rem",delay:3,opacity:1,duration:.1})
+            gsap.to(".leftContentText",{delay:3,opacity:1,duration:0})
+            gsap.to(".leftContentBlocker",{height:0,delay:3,duration:.4,ease:Power3.easeInOut })
+            gsap.fromTo(".sideButton1",{x:-15},{delay:3.8,x:0,opacity:1})
+            gsap.fromTo(".sideButton2",{x:-15},{delay:4.0,x:0,opacity:1})
+            gsap.fromTo(".sideButton3",{x:-15},{delay:4.2,x:0,opacity:1})
+            gsap.fromTo(".rightBar",{x:15},{delay:4.5,x:0,opacity:1})
 
        },[RootRef]) 
        return ()=>{context.revert()}
@@ -46,9 +55,9 @@ const Tutorial07 = () => {
                     </div>
                     <div className={style.layer2}>
                         <div className={style.sideBar}>
-                            <div className={style.sideButton}>lorem</div>
-                            <div className={style.sideButton}>epsum</div>
-                            <div className={style.sideButton}>dolores</div>
+                            <div className={`sideButton1 ${style.sideButton}`}>lorem</div>
+                            <div className={`sideButton2 ${style.sideButton}`}>epsum</div>
+                            <div className={`sideButton3 ${style.sideButton}`}>dolores</div>
                         </div>
                         <div className={style.imgContainer}>
                             <div className={style.img} style={{position:"relative"}}>
@@ -63,18 +72,19 @@ const Tutorial07 = () => {
                                         <p><span>lorem</span>ipson</p>
                                         <div className={`titleBlocker ${style.titleBlocker}`}/>
                                     </div>
-                                    <div className={style.number}>07</div>
+                                    <div className={`number ${style.number}`}>07</div>
                                 </div>
                                 <div className={style.buttonContainer}>
-                                    <div className={style.button}>Discover<FaArrowRight/> </div>
+                                    <div className={`button ${style.button}`}>Discover<FaArrowRight/> </div>
                                 </div>
                             </div>
                             <div className={style.leftContent}>
-                                <div>{`sit amet consectetur.`.toUpperCase()}</div>
-                                <div>{`Lorem ipsum dolor`.toUpperCase()}</div>
+                                <div className={`leftContentBlocker ${style.leftContentBlocker}`}/>
+                                <div className={`leftContentText ${style.leftContentText}`}>{`sit amet consectetur.`.toUpperCase()}</div>
+                                <div className={`leftContentText ${style.leftContentText}`}>{`Lorem ipsum dolor`.toUpperCase()}</div>
                             </div>
                         </div>
-                        <div className={style.rightBar}>
+                        <div className={`rightBar ${style.rightBar}`}>
                             <div className={style.wrap}>
                                 <p>Lorem</p>
                                 <div className={style.bar}/>

@@ -140,7 +140,7 @@
                         .titleBlocker {
                             width: 36vw;
                             height: 5.1vw;
-                            background-color: rgba($color: #000000, $alpha: .5);
+                            background-color: rgb(31, 31, 31);
                             transform: translateX(-18vw);
                             position: absolute;
                         }
@@ -180,11 +180,17 @@
                 }
             }
             .leftContent{
+                .leftContentBlocker {
+                    position: absolute;
+                    width: 4rem;
+                    height: 20rem;
+                    background-color: rgb(31, 31, 31);
+                }
                 display: flex;
                 justify-content: flex-end;
                 font-weight: bolder;
                 font-size: 1.5rem;
-                div {
+                .leftContentText {
                     writing-mode: tb-rl
                 }
             }
@@ -227,7 +233,9 @@
     }
     .layer2{
         .sideBar{
-            .sideButton{}
+            .sideButton{
+                opacity: 0;
+            }
         }
         .imgContainer{
             .img{
@@ -238,24 +246,34 @@
         }
         .content{
             .centerContent{
-                .title{
-                    .titleBlocker {
-                        opacity: 0;
+                .topCenterContent {
+                    .title{
+                        .titleBlocker {
+                            opacity: 0;
+                        }
+                        p {
+                            opacity: 0;
+                        }
                     }
-                    p {
+                    .number{
                         opacity: 0;
                     }
                 }
-                .number{}
-                .button{}
+                .button{
+                    opacity: 0;
+                }
             }
             .leftContent{
-                p {}
+                .leftContentBlocker{
+                    opacity: 0;
+                }
+                .leftContentText {
+                    opacity: 0;
+                }
             }
         }
         .rightBar{
-            .bar{}
-            p{}
+            opacity: 0;
         }
     }
 }
