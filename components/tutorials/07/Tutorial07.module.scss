@@ -96,6 +96,7 @@
             flex-direction: column;
             justify-content: center;
             gap: 5rem;
+            width: 3rem;
             .sideButton {
                 transform: rotate(90deg);
                 display: flex;
@@ -105,10 +106,16 @@
         }
         .imgContainer{
             grid-column: 2 / span 3;
+            @media screen and (max-width:720px) {
+                grid-column: 2 / span 3;
+            }
             justify-self: end;
-            margin-top: 10%;
-            margin-bottom: 10%;
+            margin-top: 20%;
+            margin-bottom: 20%;
             width: 80%;
+            @media screen and (max-width:720px) {
+                width: 100%;
+            }
             .curtain {
                 width: 100%;
                 height: 100%;
@@ -123,6 +130,9 @@
         }
         .content{
             grid-column: 5 / span 7;
+            @media screen and (max-width:720px) {
+                grid-column: 5 / span 2;
+            }
             display: grid;
             grid-template-columns: 1fr 4rem;
             .centerContent{
@@ -131,7 +141,7 @@
                 grid-template-columns: 1fr;
                 .topCenterContent{
                     display: grid;
-                    grid-template-columns: 1fr 1fr;
+                    grid-template-columns: 1fr auto;
                     .title{
                         display: flex;
                         align-items: flex-end;
@@ -140,10 +150,14 @@
                             font-weight: bolder;
                             font-size: 3rem;
                             transform: translateX(-13.5rem);
+                            @media screen and (max-width:720px){
+                                transform: translateX(-7rem);
+                                font-size: 1.5rem;
+                            }
                             position: absolute;
                             font-family: 'Rubik Mono One', monospace;
                             span {
-                                color: rgb(97, 0, 0);
+                                color: rgb(240, 0, 0);
                             }
                         }
                     }
@@ -167,6 +181,9 @@
                         justify-content: center;
                         gap: .5rem;
                         padding: 1.2rem;
+                        @media screen and (max-width:720px) {
+                            padding: .5rem;
+                        }
                     }   
                 }
             }
@@ -175,6 +192,9 @@
                 justify-content: flex-end;
                 font-weight: bolder;
                 font-size: 1.5rem;
+                @media screen and (max-width:720px) {
+                    grid-column: 9;
+                }
                 div {
                     writing-mode: tb-rl
                 }
@@ -185,6 +205,7 @@
             align-items: flex-end;
             justify-content: flex-end;
             flex-direction: column;
+            grid-column: 12;
             .wrap{
                 display: flex;
                 flex-direction: column;
