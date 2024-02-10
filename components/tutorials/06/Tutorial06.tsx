@@ -21,19 +21,19 @@ const Tutorial06 = () => {
             gsap.fromTo(".p1",{y:80},{opacity:1,y:0,ease:Power3.easeOut,duration:1.5,delay:1})
             gsap.fromTo(".p2",{y:"-3.5rem"},{y:0,opacity:1,delay:2})
             gsap.to(".p3",{opacity:1,duration:0.3,delay:2.6})
-            gsap.fromTo(".p4",{x:-50},{x:0,opacity:1,duration:0.3,delay:2.6,ease:Power3.easeOut})
+            gsap.fromTo(".p4",{x:-50},{x:0,opacity:1,delay:2.6,ease:Power3.easeOut})
             gsap.fromTo(".sideMessage",{},{opacity:1,delay:3})
             gsap.fromTo(".button",{x:-50},{x:0,opacity:1,delay:3.5})
 
         },[RootRef])
-        return ()=>{context.revert()} 
+        return ()=>{context.revert()}
     },[])
 
     return (
         <>
         <div className={style.Page}>
             <div className={style.header}>
-                <p>Tutorial 06</p>
+                <p>06</p>
                 <p>Hero Page</p>
             </div>
             <div className={style.container}>

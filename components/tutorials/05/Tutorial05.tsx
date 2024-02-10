@@ -28,7 +28,7 @@ const Tutorial05 = () => {
     return (
         <div className={style.Page}>
             <div className={style.header}>
-                <p>Tutorial 05</p>
+                <p>05</p>
                 <p>Hero Page</p>
             </div>
             <div className={style.container}>

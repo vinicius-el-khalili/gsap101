@@ -24,7 +24,7 @@ const Tutorial03 = () => {
 
         <div className={style.Page}>
             <div className={style.header}>
-                <p>Tutorial 03</p>
+                <p>03</p>
                 <p>Reveal effect</p>
             </div>
             <div className={style.container} ref={RootRef}>

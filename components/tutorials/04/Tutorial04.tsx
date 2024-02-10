@@ -62,7 +62,7 @@ const Tutorial04 = () => {
     return (
         <div className={style.Page}>
             <div className={style.header}>
-                <p>Tutorial 04</p>
+                <p>04</p>
                 <p>Slider {slide}</p>
             </div>
             <div className={style.container}>
