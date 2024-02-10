@@ -14,8 +14,8 @@ const Tutorial06 = () => {
     useLayoutEffect(()=>{
         const context = gsap.context(()=>{
 
-            gsap.fromTo(".curtain",{width:"0"},{width:"100%"})
-            gsap.fromTo(".curtain",{x:0},{x:"100%",delay:1})
+            gsap.fromTo(".curtain",{width:"0"},{width:"100%",ease:Power3.easeIn})
+            gsap.fromTo(".curtain",{x:0},{x:"100%",delay:1,ease:Power3.easeInOut})
             gsap.to(".img",{opacity:1,delay:1,duration:0})
             gsap.fromTo(".img",{transform:"scale(1.2)"},{transform:"scale(1)",opacity:1,delay:1})
             gsap.fromTo(".p1",{y:80},{opacity:1,y:0,ease:Power3.easeOut,duration:1.5,delay:1})

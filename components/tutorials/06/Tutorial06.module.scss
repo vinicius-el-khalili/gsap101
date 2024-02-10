@@ -51,7 +51,7 @@
                 }
                 &:nth-child(3){
                     position: absolute;
-                    transform: translate(8rem,1rem);
+                    transform: translate(8rem,.5rem);
                     font-size: 2rem;
                 }
                 &:nth-child(4){
@@ -75,6 +75,7 @@
             justify-content: center;
             gap: 1rem;
             text-wrap: none;
+            border: 1px solid black;
             span {
                 display: flex;
                 align-items: center;
@@ -121,13 +122,14 @@
         .frontContainer {
             grid-template-columns: 1fr 1fr;
             .textContainer{
+                padding: 1rem;
                 justify-content: flex-start;
                 grid-column: 1;
                 p {
                     font-size: 2rem;
                     &:nth-child(3){
                         font-size: 1rem;
-                        transform: translate(3.5rem,5.5rem);
+                        transform: translate(3.5rem,5rem);
                     }
                     &:nth-child(4){
                         font-size: 3rem;
