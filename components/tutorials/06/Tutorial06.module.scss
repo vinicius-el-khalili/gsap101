@@ -45,6 +45,10 @@
                 span {
                     color: darkgray;
                 }
+                &:nth-child(2){
+                    font-weight: lighter;
+                    font-size: 1.5rem;
+                }
                 &:nth-child(3){
                     position: absolute;
                     transform: translate(8rem,1rem);
@@ -52,10 +56,10 @@
                 }
                 &:nth-child(4){
                     font-size: 7rem;
-                    color: salmon;
+                    color: rgb(91, 117, 91);
                     span {
                         font-size: 9rem;
-                        color: salmon;
+                        color: rgb(91, 117, 91);
                     }
                 }
             }
@@ -68,7 +72,8 @@
             padding: 1rem;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 1rem;
             text-wrap: none;
             span {
                 display: flex;
@@ -89,11 +94,12 @@
             position: relative;
             width: 100%;
             height: 80%;
+            overflow: hidden;
             .curtain {
                 position: absolute;
-                width: 90%;
+                width: 100%;
                 height: 100%;
-                background-color: rgba($color: #000000, $alpha: .5);
+                background-color: rgb(91, 117, 91);
                 z-index: 2;
             }
         }
@@ -108,6 +114,7 @@
     }
 }
 
+// responsiveness
 
 @media screen and (max-width:720px) {
     .HeroContainer {
@@ -147,6 +154,35 @@
             .sideMessage {
                 padding-top: 15rem;
             }
+        }
+    }
+}
+
+
+// gsap
+
+.HeroContainer {
+    .backContainer {
+        .imgContainer {
+            .curtain {
+                width: 0;
+            }
+            .img {
+                opacity: 0;
+            }
+        }
+        .sideMessage {
+            opacity: 0;
+        }
+    }
+    .frontContainer {
+        .textContainer {
+            p {
+                opacity: 0;
+            }
+        }
+        .button {
+            opacity: 0;
         }
     }
 }
