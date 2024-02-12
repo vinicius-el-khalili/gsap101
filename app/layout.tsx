@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import style from "@/sass/layout.module.scss"
+import MyRootLayout from '@/components/layouts/MyRootLayout'
 
 
 export const metadata: Metadata = {
@@ -14,17 +15,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
-        <div className={style.Page}>
-          <div className={style.header}>
-            07
-          </div>
-          <div className={style.container}>
-            {children}
-          </div>
-        </div>
-        </body> 
-    </html>
-  )
-}
+
+  <html lang="en">
+    <body>
+      <MyRootLayout>
+        {children}
+      </MyRootLayout>
+    </body> 
+  </html>  
+
+  )}
