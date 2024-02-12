@@ -31,41 +31,33 @@ const Tutorial06 = () => {
 
     return (
         <>
-        <div className={style.Page}>
-            <div className={style.header}>
-                <p>06</p>
-                <p>Hero Page</p>
-            </div>
-            <div className={style.container}>
-                <div className={style.HeroContainer} ref={RootRef}>
+        <div className={style.HeroContainer} ref={RootRef}>
 
-                    <div className={style.frontContainer}>
-                        <div className={style.textContainer}>
-                            <p className="p1">IPSON&<span>IPSUM</span></p>
-                            <p className="p2">Lorems from</p>
-                            <p className="p3">THE</p>
-                            <p className="p4"><span>H</span>eart</p>
-                        </div>
-                        <div className={`button ${style.button}`}>
-                            Visit
-                            <span><FaArrowRight/></span>
-                        </div>
-                    </div>
-
-                    <div className={style.backContainer}>
-
-                        <div className={style.imgContainer}>
-                            <div className={`curtain ${style.curtain}`}/>
-                            <Image className={`img ${style.img}`} src={"/naturalAesthetics03.webp"} alt="" fill style={{objectFit:"cover"}}/>
-                        </div>
-                        <div className={`sideMessage ${style.sideMessage}`}>
-                            <p>et accusantium</p>
-                        </div>
-
-                    </div>
-
+            <div className={style.frontContainer}>
+                <div className={style.textContainer}>
+                    <p className="p1">IPSON&<span>IPSUM</span></p>
+                    <p className="p2">Lorems from</p>
+                    <p className="p3">THE</p>
+                    <p className="p4"><span>H</span>eart</p>
+                </div>
+                <div className={`button ${style.button}`}>
+                    Visit
+                    <span><FaArrowRight/></span>
                 </div>
             </div>
+
+            <div className={style.backContainer}>
+
+                <div className={style.imgContainer}>
+                    <div className={`curtain ${style.curtain}`}/>
+                    <Image className={`img ${style.img}`} src={"/naturalAesthetics03.webp"} alt="" fill style={{objectFit:"cover"}}/>
+                </div>
+                <div className={`sideMessage ${style.sideMessage}`}>
+                    <p>et accusantium</p>
+                </div>
+
+            </div>
+
         </div>
         </>
     );

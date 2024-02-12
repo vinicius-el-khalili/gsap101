@@ -40,11 +40,6 @@ const Tutorial07 = () => {
 
     return (
         <div className={style.Page}>
-            <div className={style.header}>
-                <p>07</p>
-                <p>Hero Page</p>
-            </div>
-            <div className={style.container}>
                 <div className={style.HeroContainer} ref={RootRef}>
                     <div className={style.layer1}>
                         <div className={style.stripes}>
@@ -93,8 +88,6 @@ const Tutorial07 = () => {
                     </div>
                 </div>
             </div>
-        </div>
-
     );
 }
  

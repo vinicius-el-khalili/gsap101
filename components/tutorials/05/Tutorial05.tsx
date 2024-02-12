@@ -26,38 +26,30 @@ const Tutorial05 = () => {
     },[])
 
     return (
-        <div className={style.Page}>
-            <div className={style.header}>
-                <p>05</p>
-                <p>Hero Page</p>
+    <div className={style.HeroContainer} ref={RootRef}>
+        <div className={`textsContainer ${style.textsContainer}`}>
+            <div className={style.textHeader}>
+                <p className="p1">Lorem ipsum dolor sit,</p>
+                <p className="p2">amet consectetur</p>
+                <p className="p3">adipisicing elit.</p>
             </div>
-            <div className={style.container}>
-                <div className={style.HeroContainer} ref={RootRef}>
-                    <div className={`textsContainer ${style.textsContainer}`}>
-                        <div className={style.textHeader}>
-                            <p className="p1">Lorem ipsum dolor sit,</p>
-                            <p className="p2">amet consectetur</p>
-                            <p className="p3">adipisicing elit.</p>
-                        </div>
-                        <div className={`paragraph ${style.paragraph}`}>
-                            Excepturi deserunt omnis cum ullam, atque magnam facere voluptates consequatur assumenda ad maxime eligendi delectus sapiente quis. Sapiente, rem.
-                        </div>
-                        <div className={`explore ${style.explore}`}>
-                            <div className={style.text}>EXPLORE</div>
-                            <div className={style.exploreButton}><FaArrowRight/></div>
-                        </div>
-                    </div>
-                    <div className={style.imagesContainer}>
-                        <div className={`img1 ${style.img}`}>
-                            <Image src={"/naturalAesthetics01.webp"} alt="" fill style={{objectFit:"cover"}}/>
-                        </div>
-                        <div className={`img2 ${style.img}`}>
-                            <Image src={"/naturalAesthetics02.webp"} alt="" fill style={{objectFit:"cover"}}/>
-                        </div>
-                    </div>
-                </div>
+            <div className={`paragraph ${style.paragraph}`}>
+                Excepturi deserunt omnis cum ullam, atque magnam facere voluptates consequatur assumenda ad maxime eligendi delectus sapiente quis. Sapiente, rem.
+            </div>
+            <div className={`explore ${style.explore}`}>
+                <div className={style.text}>EXPLORE</div>
+                <div className={style.exploreButton}><FaArrowRight/></div>
             </div>
         </div>
+        <div className={style.imagesContainer}>
+            <div className={`img1 ${style.img}`}>
+                <Image src={"/naturalAesthetics01.webp"} alt="" fill style={{objectFit:"cover"}}/>
+            </div>
+            <div className={`img2 ${style.img}`}>
+                <Image src={"/naturalAesthetics02.webp"} alt="" fill style={{objectFit:"cover"}}/>
+            </div>
+        </div>
+    </div>
     );
 }
  

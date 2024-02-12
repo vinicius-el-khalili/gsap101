@@ -60,50 +60,42 @@ const Tutorial04 = () => {
     },[])
 
     return (
-        <div className={style.Page}>
-            <div className={style.header}>
-                <p>04</p>
-                <p>Slider {slide}</p>
+    <div className={style.sliderContainer} ref={RootRef}>
+
+        <div className={style.sliderButton} onClick={handleLeftSlide}>
+            <FaArrowLeft/>
+        </div>
+
+        <div className={style.slide}>
+            <div className={style.imgContainer}>
+                <Image className={`img01 ${style.img}`} src={`/naturalAesthetics01.webp`} alt="" fill style={{objectFit:"contain"}}/>
+                <Image className={`img02 ${style.img}`} src={`/naturalAesthetics02.webp`} alt="" fill style={{objectFit:"contain"}}/>
+                <Image className={`img03 ${style.img}`} src={`/naturalAesthetics03.webp`} alt="" fill style={{objectFit:"contain"}}/>
             </div>
-            <div className={style.container}>
-                <div className={style.sliderContainer} ref={RootRef}>
-
-                    <div className={style.sliderButton} onClick={handleLeftSlide}>
-                        <FaArrowLeft/>
-                    </div>
-
-                    <div className={style.slide}>
-                        <div className={style.imgContainer}>
-                            <Image className={`img01 ${style.img}`} src={`/naturalAesthetics01.webp`} alt="" fill style={{objectFit:"contain"}}/>
-                            <Image className={`img02 ${style.img}`} src={`/naturalAesthetics02.webp`} alt="" fill style={{objectFit:"contain"}}/>
-                            <Image className={`img03 ${style.img}`} src={`/naturalAesthetics03.webp`} alt="" fill style={{objectFit:"contain"}}/>
-                        </div>
-                        <div className={style.textContainer}>
-                            <div className={`subtextContainer1 ${style.subtextContainer}`}>
-                                <div className={`text ${style.text}`}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                                <div className={`name ${style.name}`}>John Doe</div>
-                                <div className={`description ${style.description}`}>Professional Template</div>
-                            </div>
-                            <div className={`subtextContainer2 ${style.subtextContainer}`}>
-                                <div className={`text ${style.text}`}>Amet consectetur adipisicing elit.</div>
-                                <div className={`name ${style.name}`}>Lady Gaga</div>
-                                <div className={`description ${style.description}`}>Singer</div>
-                            </div>
-                            <div className={`subtextContainer3 ${style.subtextContainer}`}>
-                                <div className={`text ${style.text}`}>Adipisicing elit Lorem ipsum dolor sit, amet consectetur.</div>
-                                <div className={`name ${style.name}`}>Snoopy</div>
-                                <div className={`description ${style.description}`}>Doggy Dog</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={style.sliderButton} onClick={handleRightSlide}>
-                        <FaArrowRight/>
-                    </div>
-
+            <div className={style.textContainer}>
+                <div className={`subtextContainer1 ${style.subtextContainer}`}>
+                    <div className={`text ${style.text}`}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+                    <div className={`name ${style.name}`}>John Doe</div>
+                    <div className={`description ${style.description}`}>Professional Template</div>
+                </div>
+                <div className={`subtextContainer2 ${style.subtextContainer}`}>
+                    <div className={`text ${style.text}`}>Amet consectetur adipisicing elit.</div>
+                    <div className={`name ${style.name}`}>Lady Gaga</div>
+                    <div className={`description ${style.description}`}>Singer</div>
+                </div>
+                <div className={`subtextContainer3 ${style.subtextContainer}`}>
+                    <div className={`text ${style.text}`}>Adipisicing elit Lorem ipsum dolor sit, amet consectetur.</div>
+                    <div className={`name ${style.name}`}>Snoopy</div>
+                    <div className={`description ${style.description}`}>Doggy Dog</div>
                 </div>
             </div>
         </div>
+
+        <div className={style.sliderButton} onClick={handleRightSlide}>
+            <FaArrowRight/>
+        </div>
+
+    </div>
     );
 }
  

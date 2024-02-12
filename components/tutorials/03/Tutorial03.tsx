@@ -21,23 +21,11 @@ const Tutorial03 = () => {
     },[])
 
     return (
-
-        <div className={style.Page}>
-            <div className={style.header}>
-                <p>03</p>
-                <p>Reveal effect</p>
-            </div>
-            <div className={style.container} ref={RootRef}>
-
-
-                <div className={`imgContainer ${style.imgContainer}`} ref={imgRef}>
-                    <Image className="img" src={"/hilma.webp"} alt="" fill style={{objectFit:"cover"}}/>
-                </div>
-
-
-            </div>
+    <div className={style.container} ref={RootRef}>
+        <div className={`imgContainer ${style.imgContainer}`} ref={imgRef}>
+            <Image className="img" src={"/hilma.webp"} alt="" fill style={{objectFit:"cover"}}/>
         </div>
-
+    </div>
     );
 }
  

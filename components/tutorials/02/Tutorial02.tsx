@@ -44,10 +44,6 @@ const Tutorial02 = () => {
     return (
         <>
         <div ref={rootRef} className={style.Page} onClick={shrinkAll}>
-            <div className={style.header}>
-                <p>Tutorial 02</p>
-                <p>Mouse events</p>
-            </div>
             <div className={style.container}>
 
                 <div 
