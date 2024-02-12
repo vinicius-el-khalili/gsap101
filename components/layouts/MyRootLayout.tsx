@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import '@/sass/globals.scss'
 import style from "@/sass/layout.module.scss"
+import DynamicLayout from './DynamicLayout'
 
 
 export const metadata: Metadata = {
@@ -16,9 +17,7 @@ export default function MyRootLayout({
   return (
 
   <div className={style.Page}>
-    <div className={style.header}>
-      07
-    </div>
+    <DynamicLayout/>
     <div className={style.container}>
       {children}
     </div>
