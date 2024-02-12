@@ -5,11 +5,15 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 const DynamicLayout = () => {
 
     const [n,setN] = useState<number>(1)
-    const [current,setCurrent] = useState<string>(window.location.href.slice(-2))
+    const [current,setCurrent] = useState<string>("")
     const setNumber = (number:number) => {
         setCurrent(number.toString().padStart(2, '0'))
         setN(number)
     }
+
+    useEffect(()=>{
+        setCurrent(window.location.href.slice(-2))
+    },[])
 
     return (
 
