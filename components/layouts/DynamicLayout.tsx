@@ -23,14 +23,18 @@ const DynamicLayout = () => {
             {current}
         </div>
 
-        <MyLink number={2} setN={setNumber}/>
-        <MyLink number={3} setN={setNumber}/>
-        <MyLink number={4} setN={setNumber}/>
-        <MyLink number={5} setN={setNumber}/>
-        <MyLink number={6} setN={setNumber}/>
-        <MyLink number={7} setN={setNumber}/>
-        <MyLink number={8} setN={setNumber}/>
+        <div className={style.links}>
 
+            <MyLink number={2} setN={setNumber}/>
+            <MyLink number={3} setN={setNumber}/>
+            <MyLink number={4} setN={setNumber}/>
+            <MyLink number={5} setN={setNumber}/>
+            <MyLink number={6} setN={setNumber}/>
+            <MyLink number={7} setN={setNumber}/>
+            <MyLink number={8} setN={setNumber}/>
+
+        </div>
+        
         <div>About</div>
         
     </div>
@@ -46,8 +50,10 @@ const MyLink = ({number,setN}:{
 }) => {
  
     return (
-    <Link href={`/tutorials/${number.toString().padStart(2, '0')}`} onClick={()=>setN(number)}>
-        {`${number.toString().padStart(2, '0')}`}
-    </Link>
+    <div className={style.link}>
+        <Link href={`/tutorials/${number.toString().padStart(2, '0')}`} onClick={()=>setN(number)}>
+            {`${number.toString().padStart(2, '0')}`}
+        </Link>
+    </div>
     )
 }
